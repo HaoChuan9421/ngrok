@@ -213,7 +213,7 @@ func defaultPath() string {
 		homeDir = user.HomeDir
 	}
 
-	return path.Join(homeDir, ".ngrok")
+	return path.Join(homeDir, ".ngrok/ngrok.yml")
 }
 
 func normalizeAddress(addr string, propName string) (string, error) {
